@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TP3 Complet - Sacha Bracquemart</title>
+</head>
+<body>
+
+    <h1>EXERCICE 1 : Mémento des balises HTML</h1>
+    <p>Liste des balises HTML utilisées pour la présentation du texte.</p>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Balise</th>
+                <th>Rôle</th>
+                <th>Exemple</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;h1&gt; à &lt;h6&gt;</td>
+                <td>Titres (h1 = plus grand)</td>
+                <td>&lt;h1&gt;Titre&lt;/h1&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;p&gt;</td>
+                <td>Paragraphe</td>
+                <td>&lt;p&gt;Texte&lt;/p&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;ul&gt;</td>
+                <td>Liste à puces</td>
+                <td>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;strong&gt;</td>
+                <td>Texte important (Gras)</td>
+                <td>&lt;strong&gt;Gras&lt;/strong&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;em&gt;</td>
+                <td>Texte emphatique (Italique)</td>
+                <td>&lt;em&gt;Italique&lt;/em&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;br&gt;</td>
+                <td>Saut de ligne</td>
+                <td>Texte&lt;br&gt;Suite</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <hr>
+    <br>
+
+    <h1>EXERCICE 2 : Le langage SQL</h1>
+
+    <h1>1. Le langage SQL</h1>
+
+    <h2>1.1. Définition</h2>
+    <p>Le langage <strong>SQL</strong> (Structured Query Language ou Langage de requêtes structuré) est un langage comprenant à lui seul l'ensemble des ordres nécessaires à la création et à la gestion d'une base de données relationnelle. Il a été créé en 1986.</p>
+
+    <h2>1.2. Les différentes normes utilisées</h2>
+    <p>Il existe aujourd'hui plusieurs normes relatives à l'utilisation du <strong>langage SQL</strong> :</p>
+    <ul>
+        <li>La norme <strong>SQL 89</strong> qui est encore très utilisée actuellement.</li>
+        <li>La norme <strong>SQL 92</strong>.</li>
+        <li>Aujourd'hui <strong>SQL 2011</strong>.</li>
+    </ul>
+    
+    <p>Bien qu'il existe des normes il peut y avoir des différences entre SGBDR (PostgreSQL, etc.) :</p>
+    <ul>
+        <li><em>"Le développement de PostgreSQL respecte le standard en vigueur..."</em></li>
+        <li><em>"SQL-92 définit trois niveaux de conformité..."</em></li>
+    </ul>
+
+    <h1>2. Le modèle de données utilisé dans le cours</h1>
+    <h2>2.1. Le modèle entité-association (ou MCD) d'un établissement hospitalier</h2>
+    <h2>2.2. Le modèle relationnel (ou MRD) d'un établissement hospitalier</h2>
+    <h2>2.3. La description textuelle des tables utilisées</h2>
+
+    <pre>
+fonction_personnel (code_fonction, libelle_fonction)
+Clé primaire : code_fonction
+
+service (num_service, libelle_service, capacite_accueil, date_ouverture)
+Clé primaire : num_service
+    </pre>
+
+    <br>
+    <hr>
+    <br>
+
+    <h1>EXERCICE 3 : Mon CV</h1>
+
+    <header>
+        <h1>SACHA BRACQUEMART</h1>
+        <p><strong>TRAVAIL ÉTUDIANT</strong></p>
+    </header>
+
+    <section>
+        <h2>CONTACT</h2>
+        <address>
+            34 Allée Jacques Prévert, 26760 Beaumont Les Valence<br>
+            06 98 05 61 67<br>
+            <a href="mailto:sacha.bracquemart@gmail.com">sacha.bracquemart@gmail.com</a><br>
+            18 ans - Permis B
+        </address>
+    </section>
+
+    <section>
+        <h2>PROFIL</h2>
+        <p>Actuellement en première année de BTS SIO (Services Informatiques aux Organisations) au lycée polyvalent Algoud-Laffemas.</p> 
+        <p>Dynamique et ayant un excellent sens du contact, j'aime collaborer avec des interlocuteurs variés. Volontaire, je mets mon engagement </p>
+        <p> au service du collectif et je suis motivé à apprendre.</p>
+    </section>
+
+    <section>
+        <h2>EXPÉRIENCE PROFESSIONNELLE</h2>
+        
+        <h3>Stagiaire HelpDesk Support - DAMI</h3>
+        <p><em>02 / 2025  -  03 / 2025</em></p>
+        <ul>
+            <li>Configuration de matériels informatique (Box 4G, NAS, VPN).</li>
+            <li>Ajout de machine à un domaine réseau.</li>
+            <li>Assemblage d'ordinateur.</li>
+        </ul>
+
+        <h3>Stagiaire technicien de fibre optique - ENERGIE FIBRE</h3>
+        <p><em>12 / 2024  -  01 / 2025<p>
+        <ul>
+            <li>Raccordements, dommages réseaux, soudure de fibre optique.</li>
+            <li>Installation de fibre optique chez particulier & professionnelle.</li>
+        </ul>
+    
+        <h3>Stagiaire informatique - HUB-Esport | Valence</h3>
+        <p><em>05 / 2024  -  06 / 2024<p>
+        <ul>
+            <li>Installation de nouveaux matériels et équipements informatiques (logiciels,antivirus, ordinateurs ...), réalisation des mises à jour.</li>
+            <li>Gestion des équipements informatiques de l'entreprise (stocks, approvisionnements, équipements collaborateurs, équipements collectifs).</li>
+        </ul>
+
+        <h3>ARCC | Beaumont Les Valence</h3>
+        <p><em>06 / 2023  -  07 / 2023<p>
+        <ul>
+            <li>Participation à des visites sur site pour assister les techniciens sur le terrain, observation et apprentissage des procédures d'intervention chez les clients.</li>
+        </ul>
+
+        <h3>DEBEAUX | Beaumont Les Valence</h3>
+        <p><em>06 / 2023  -  07 / 2023<p>
+        <ul>
+            <li>Participation à des visites sur site pour assister les techniciens sur le terrain, observation et apprentissage des procédures d'intervention chez les clients.</li>
+        </ul>
