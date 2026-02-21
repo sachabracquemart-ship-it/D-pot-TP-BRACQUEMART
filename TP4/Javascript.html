@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Page JavaScript - BTS SIO</title>
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+    <header>
+        <p>BTS SIO-B1.PROG WEB - LYCEE ALGOUD-LAFFEMAS</p>
+
+        <a href="Acceuil.html"><h5>Acceuil TP 4 </h5></a>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours JavaScript : Les Bases</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: auto; padding: 20px; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #2c3e50; }
+        h2 { color: #e67e22; margin-top: 30px; border-left: 5px solid #e67e22; padding-left: 10px; }
+        h3 { color: #2980b9; }
+        code { background-color: #f4f4f4; padding: 2px 5px; border-radius: 4px; font-family: monospace; }
+        pre { background-color: #f4f4f4; padding: 15px; border-left: 3px solid #ccc; overflow-x: auto; }
+        table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .note { font-style: italic; color: #555; border-left: 3px solid #ffd700; padding-left: 10px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+
+    <h1>Langage JavaScript : Les Bases</h1>
+
+    <h2>1. Structure de base d'un programme</h2>
+    [cite_start]<p>Lorsque le code se trouve dans un fichier séparé (<code>.js</code>), la structure est la suivante[cite: 1]:</p>
+    <pre>
+/* zone d'en-tête */
+
+/* déclaration des variables globales */
+[cite_start]let variable1; [cite: 2]
+
+/* définition des fonctions */
+[cite_start]function maFonction() { ... } [cite: 3]
+
+/* CORPS DU PROGRAMME */
+[cite_start]instruction1; [cite: 3]
+    </pre>
+    [cite_start]<p class="note">Il est conseillé de déclarer les variables en début de script pour une meilleure lisibilité[cite: 4].</p>
+
+    <h3>Intégration dans une page Web</h3>
+    [cite_start]<p>Dans un document HTML, on utilise la balise <code>&lt;script&gt;</code>[cite: 9]:</p>
+    <ul>
+        <li><strong>Dans le &lt;head&gt; [cite_start]:</strong> Pour les variables globales et les fonctions[cite: 9].</li>
+        <li><strong>Dans le &lt;body&gt; [cite_start]:</strong> Pour les instructions directes[cite: 9].</li>
+    </ul>
+
+    <h2>2. Les Commentaires</h2>
+    [cite_start]<p>Indispensables pour la relecture et le travail en équipe [cite: 10][cite_start], ils ne sont pas interprétés par le navigateur[cite: 13].</p>
+    <ul>
+        [cite_start]<li><code>//</code> : Commentaire sur une seule ligne[cite: 13].</li>
+        [cite_start]<li><code>/* ... */</code> : Commentaire multi-lignes (souvent utilisé pour l'en-tête : auteur, date, descriptif)[cite: 14, 15].</li>
+    </ul>
+
+    <h2>3. Déclaration de Variables et Constantes</h2>
+    [cite_start]<p>JavaScript est un langage <strong>faiblement typé</strong>[cite: 20]. [cite_start]Contrairement au langage C, on ne précise pas le type à la déclaration ; il est défini lors de l'utilisation[cite: 24].</p>
+    
+    <h3>Mots-clefs de déclaration</h3>
+    <ul>
+        <li><code>let</code> : Déclare une variable <strong>locale</strong> au bloc d'instruction <code>{ }</code>. [cite_start]C'est le choix recommandé[cite: 46, 49].</li>
+        [cite_start]<li><code>var</code> : Déclare une variable <strong>globale</strong> (sauf dans une fonction)[cite: 45].</li>
+        [cite_start]<li><code>const</code> : Déclare une <strong>constante</strong> qui doit être initialisée dès sa création et dont la valeur ne changera pas[cite: 51, 52].</li>
+    </ul>
+
+    <h3>Règles de nommage</h3>
+    [cite_start]<p>Les noms peuvent contenir <code>a-z</code>, <code>A-Z</code>, <code>0-9</code> (pas au début) et <code>_</code>[cite: 36]. [cite_start]Attention : le langage est <strong>sensible à la casse</strong> (<code>Poste_1</code> est différent de <code>poste_1</code>)[cite: 40, 41].</p>
+
+    <h2>4. Les Types de Données</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Type JavaScript</th>
+                <th>Description</th>
+                <th>Plage de valeurs / Particularités</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Number</strong></td>
+                [cite_start]<td>Entier ou Réel [cite: 61]</td>
+                [cite_start]<td>-(2<sup>53</sup>-1) à 2<sup>53</sup>-1 pour les entiers[cite: 64].</td>
+            </tr>
+            <tr>
+                <td><strong>BigInt</strong></td>
+                <td>Entier grand format</td>
+                [cite_start]<td>Pour dépasser les limites de Number (ajouter <code>n</code> à la fin, ex: <code>20n</code>)[cite: 75, 76].</td>
+            </tr>
+            <tr>
+                <td><strong>String</strong></td>
+                <td>Chaîne de caractères</td>
+                <td>Utilise <code>" "</code> ou <code>' '</code>. [cite_start]Supporte l'Unicode (2 octets par caractère)[cite: 77, 78].</td>
+            </tr>
+            <tr>
+                <td><strong>Boolean</strong></td>
+                <td>Booléen</td>
+                [cite_start]<td><code>true</code> ou <code>false</code>[cite: 60].</td>
+            </tr>
+            <tr>
+                <td><strong>Null / Undefined</strong></td>
+                <td>Absence de valeur</td>
+                [cite_start]<td><code>null</code> (volontaire) ou <code>undefined</code> (non défini)[cite: 61].</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>5. Opérateurs</h2>
+    <h3>Arithmétiques</h3>
+    [cite_start]<p><code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code> (modulo), <code>**</code> (puissance)[cite: 81].</p>
+    <p class="note"><strong>Attention :</strong> JavaScript tente toujours de retourner un résultat. [cite_start]Si l'opération est impossible (ex: 5 / "test"), il retourne <code>NaN</code> (Not A Number)[cite: 84, 86].</p>
+
+    <h3>Logiques et Comparaison</h3>
+    <ul>
+        [cite_start]<li><code>==</code> (égal), <code>!=</code> (différent), <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code>[cite: 100].</li>
+        [cite_start]<li><code>&&</code> (ET), <code>||</code> (OU), <code>!</code> (NON)[cite: 99, 100].</li>
+    </ul>
+
+    <h3>Incrémentation et Affectation</h3>
+    <ul>
+        [cite_start]<li><code>i++</code> : Post-incrémentation (i = i + 1)[cite: 103].</li>
+        [cite_start]<li><code>i += 5</code> : Ajout combiné (i = i + 5)[cite: 102].</li>
+        <li><strong>Affectation conditionnelle :</strong> <code>k = (i > j) ? [cite_start]10 : -10;</code> (Si vrai alors 10, sinon -10)[cite: 107, 109].</li>
+    </ul>
+
+    <h2>6. Fonctions d'Entrée/Sortie</h2>
+    [cite_start]<p>Pour dialoguer avec l'utilisateur dans un navigateur[cite: 109, 110]:</p>
+    <ul>
+        [cite_start]<li><code>window.alert("Message");</code> : Affiche une boîte d'alerte[cite: 110].</li>
+        [cite_start]<li><code>resultat = window.confirm("Question ?");</code> : Retourne <code>true</code> (OK) ou <code>false</code> (Annuler)[cite: 112].</li>
+        [cite_start]<li><code>saisie = window.prompt("Message", "Défaut");</code> : Retourne la chaîne saisie ou <code>null</code>[cite: 112, 113].</li>
+    </ul>
+
+</body>
+</html>
