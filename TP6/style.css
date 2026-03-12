@@ -1,0 +1,49 @@
+/* police d'écriture */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; 
+    margin: 20px;
+}
+
+/*  Grille du plateau*/
+#plateau {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px; 
+    width: 90%; 
+    max-width: 800px;
+    margin: 0 auto; 
+}
+
+/* Le Dos de la carte avec Return.jpg */
+.carte {
+    aspect-ratio: 1 / 1; 
+    /*Return.jpg comme image de fond par défaut */
+    background-image: url('image-TP6/Return.jpg');
+    background-size: cover; /* Adapte l'image pour qu'elle remplisse la case */
+    background-position: center;
+    border: 1px solid black; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden; /* Empêche l'image de la voiture de dépasser */
+}
+
+/* taille de l'image return */
+.carte img {
+    width: 100%; /* Prend toute la place pour cacher le dos (Return.jpg) */
+    height: 100%;
+    object-fit: cover; 
+    opacity: 0; /* Caché */
+    
+     
+    /*Délais pour que la carte revienne opacité a 0s pour ne pas avoir de fondu  */
+    transition: opacity 0s 3s; 
+}
+
+/* Affichage au clic */
+.carte:active img {
+    opacity: 1; 
+    transition: opacity 0s 0s; /* Le délai*/
+}

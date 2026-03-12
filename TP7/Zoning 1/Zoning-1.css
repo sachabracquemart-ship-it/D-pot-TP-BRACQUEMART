@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+}
+
+/* Style de la Zone du Haut */
+.header {
+    background-color: #f26d6d; /* Rouge/Corail */
+    height: 15%; /* Proportion en hauteur */
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+/* Conteneur pour aligner Gauche et Milieu côte à côte */
+.main-content {
+    display: flex;
+    flex: 1; /* Prend tout l'espace restant en hauteur */
+}
+
+/* Style de la Zone de Gauche */
+.sidebar {
+    background-color: #6d8af2; /* Bleu */
+    width: 25%; /* Proportion en largeur */
+    padding: 10px;
+}
+
+/* Style de la Zone du Milieu */
+.content {
+    background-color: #84d184; /* Vert */
+    flex: 1; /* Prend tout le reste de la largeur */
+    padding: 10px;
+}
