@@ -3,26 +3,27 @@ body {
     padding: 0;
 }
 
-
-.header {
+.haut {
     background-color: #f26d6d; /* Rouge/Corail */
     height: 15vh; /* Proportion en hauteur */
     display: block;
     padding-left: 10px;
 }
-
-/* Style de la Zone de Gauche */
-.sidebar {
-    float :left;
+.gauche {
     background-color: #6d8af2; /* Bleu */
-    width: 20%; /* Proportion en largeur */
+    float :left;
+    width: 25%; /* Proportion en largeur */
     height: 85vh; /* Proportion en hauteur */
 }
-
-/* Style de la Zone du Milieu */
-.content {
+.milieu {
     background-color: #84d184; /* Vert */
     display: inline-block;
     height: 85vh; /* Proportion en hauteur */
-    width: 80%; /* Proportion en largeur */
+    width: 50%; /* Proportion en largeur */
+}
+.droite {
+    background-color: #a0744b;  /* Marron */
+    float :right;
+    width: 25%; /* Proportion en largeur */
+    height: 85vh; /* Proportion en hauteur */
 }

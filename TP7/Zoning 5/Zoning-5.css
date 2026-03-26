@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.haut {
+    background-color: #5c9d96; /* Rouge/Corail */
+    height: 15vh; /* Proportion en hauteur */
+    display: inline-block;
+    width: 100vw; /* Proportion en largeur */
+}
+.menu {
+    background-color: #894baf; /* Vert */
+    display: block;
+    height: 5vh; /* Proportion en hauteur */
+    width: 100vw; /* Proportion en largeur */
+}
+.marge {
+    margin-left : 15px;
+    margin-top : 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-color: #ffffff; /* Vert */
+    display: inline-block;
+    height: 60vh; /* Proportion en hauteur */
+    width: calc(100vw - 30px); /* Proportion en largeur */
+}
+.A, .B, .C, .D {
+    display: inline-block;
+}
+.A {
+    background-color: #5c9d96;  /* Marron */
+    float :left;
+    width: 50%; /* Proportion en largeur */
+    height: 30vh; /* Proportion en hauteur */
+}
+.B {
+    background-color: #d69f3a;  /* Marron */
+    float :left;
+    width: 50%; /* Proportion en largeur */
+    height: 30vh; /* Proportion en hauteur */
+}
+.C {
+    background-color: #b1b5d6;  /* Marron */
+    float :left;
+    width: 50%; /* Proportion en largeur */
+    height: 30vh; /* Proportion en hauteur */
+}
+.D {
+    background-color: #0e16e4;  /* Marron */
+    float :left;
+    width: 50%; /* Proportion en largeur */
+    height: 30vh; /* Proportion en hauteur */
+}
+.bas {
+    background-color: #5c9d96; /* Bleu */
+    float :left;
+    width: 100vw; /* Proportion en largeur */
+    height: 15vh; /* Proportion en hauteur */
+}

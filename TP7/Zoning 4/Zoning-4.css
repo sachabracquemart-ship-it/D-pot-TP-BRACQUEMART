@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.haut {
+    background-color: #6df2af; /* Rouge/Corail */
+    height: 15vh; /* Proportion en hauteur */
+    width: 100%; /* Proportion en largeur */
+    display: block;
+}
+.menu {
+    background-color: #c325f3; 
+    float : inline;
+    width: 100%; /* Proportion en largeur */
+    height: 7vh; /* Proportion en hauteur */
+}
+.milieu {
+    margin : 10px;
+    background-color: #bfe926; /* Vert */
+    display: inline-block;
+    height: 68vh; /* Proportion en hauteur */
+    width: 100%; /* Proportion en largeur */
+}
+.bas {
+    background-color: #43de6f;  /* Marron */
+    display: inline-block;
+    height: 10vh; /* Proportion en hauteur */
+    width: 100%; /* Proportion en largeur */
+}

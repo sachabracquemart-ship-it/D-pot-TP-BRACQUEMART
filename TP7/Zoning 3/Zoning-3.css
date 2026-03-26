@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.gauche {
+    background-color: #6d8af2; /* Bleu */
+    float :left;
+    width: 50%; /* Proportion en largeur */
+    height: 85vh; /* Proportion en hauteur */
+}
+.droite {
+    background-color: #c657dd;  /* Marron */
+    float :right;
+    width: 50%; /* Proportion en largeur */
+    height: 85vh; /* Proportion en hauteur */
+}
+.bas {
+    background-color: #84d184; /* Vert */
+    display: inline-block;
+    height: 15vh; /* Proportion en hauteur */
+    width: 100%; /* Proportion en largeur */
+}
